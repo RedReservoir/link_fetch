@@ -21,7 +21,11 @@ defmodule LinkFetch.MixProject do
     ]
   end
 
-  defp deps do [] end
+  defp deps do
+    [
+      {:ex_doc, "~> 0.19", only: :dev, runtime: false},
+    ]
+  end
 
   defp description do
     "Small test project to extract links from tags from an HTML file"
@@ -29,8 +33,6 @@ defmodule LinkFetch.MixProject do
 
   defp package() do
     [
-      files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
-                license* CHANGELOG* changelog* src),
       licenses: [],
       links: %{"GitHub" => "https://github.com/RedReservoir/link_fetch"}
     ]
