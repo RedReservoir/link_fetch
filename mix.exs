@@ -10,7 +10,8 @@ defmodule LinkFetch.MixProject do
       description: description(),
       deps: deps(),
       name: "LinkFetch",
-      package: package()
+      package: package(),
+      source_url: "https://github.com/RedReservoir/link_fetch"
     ]
   end
 
@@ -31,7 +32,7 @@ defmodule LinkFetch.MixProject do
       files: ~w(lib priv .formatter.exs mix.exs README* readme* LICENSE*
                 license* CHANGELOG* changelog* src),
       licenses: [],
-      links: %{}
+      links: %{"GitHub" => "https://github.com/RedReservoir/link_fetch"}
     ]
   end
 end
