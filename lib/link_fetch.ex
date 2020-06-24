@@ -7,7 +7,8 @@ defmodule LinkFetch do
   Returns all links in image and anchor tags from an HTML.
 
   Returns `:ok` and a tuple with two lists (image links and anchor links) if no problems arise.
-  Returns `:error` and the `Reason` from `:httpc.request` (see http://erlang.org/doc/man/httpc.html#request-5) otherwise.
+  
+  Returns `:error` and the `Reason` from `:httpc.request` (see [http://erlang.org/doc/man/httpc.html#request-5](http://erlang.org/doc/man/httpc.html#request-5)) otherwise.
 
   ## Examples
 
